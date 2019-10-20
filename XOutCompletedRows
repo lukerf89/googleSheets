@@ -1,0 +1,11 @@
+function XOutCompletedRows() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var X = "X";
+  var range = 'A2:A2089';
+  var colorRange = 'B2';
+  // The code below logs the background color for the active range.
+  var color = SpreadsheetApp.getActiveRange().getBackgroundColor();
+  Logger.log(color);
+  sheet.getRange(range).setValue(X);
+  sheet.getRange(range).setBackground(color);
+}
