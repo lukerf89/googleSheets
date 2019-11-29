@@ -1,0 +1,38 @@
+function DCOUNTA_FSbyWeek() {
+  var activeSheet = SpreadsheetApp.getActive();
+  
+  var selection = activeSheet.getSelection();
+  
+  //var ActiveRange = selection.getActiveRange();
+  
+  var cell = activeSheet.getRange("L3");
+  var unit = "2C.FarmPlan";
+  cell.setValue('=(DCOUNTA(C1:G133,"Mon",{"Mon";"'+unit+'"})+DCOUNTA(C1:G133,"Tues",{"Tues";"'+unit+'"})+DCOUNTA(C1:G133,"Wed",{"Wed";"'+unit+'"})+DCOUNTA(C1:G133,"Thurs",{"Thurs";"'+unit+'"})+DCOUNTA(C1:G133,"Fri",{"Fri";"'+unit+'"}))*2');
+  
+  var newCell = cell.offset(1, 0);
+  var unit = "2F.FarmPlanFD";
+  newCell.setValue('=(DCOUNTA(C1:G133,"Mon",{"Mon";"'+unit+'"})+DCOUNTA(C1:G133,"Tues",{"Tues";"'+unit+'"})+DCOUNTA(C1:G133,"Wed",{"Wed";"'+unit+'"})+DCOUNTA(C1:G133,"Thurs",{"Thurs";"'+unit+'"})+DCOUNTA(C1:G133,"Fri",{"Fri";"'+unit+'"}))*2');
+  cell = newCell;
+  
+  var newCell = cell.offset(1, 0);
+  var unit = "3C.Soils";
+  newCell.setValue('=(DCOUNTA(C1:G133,"Mon",{"Mon";"'+unit+'"})+DCOUNTA(C1:G133,"Tues",{"Tues";"'+unit+'"})+DCOUNTA(C1:G133,"Wed",{"Wed";"'+unit+'"})+DCOUNTA(C1:G133,"Thurs",{"Thurs";"'+unit+'"})+DCOUNTA(C1:G133,"Fri",{"Fri";"'+unit+'"}))*2');
+  cell = newCell;
+  
+  var newCell = cell.offset(1, 0);
+  var unit = "3F.SoilsFD";
+  newCell.setValue('=(DCOUNTA(C1:G133,"Mon",{"Mon";"'+unit+'"})+DCOUNTA(C1:G133,"Tues",{"Tues";"'+unit+'"})+DCOUNTA(C1:G133,"Wed",{"Wed";"'+unit+'"})+DCOUNTA(C1:G133,"Thurs",{"Thurs";"'+unit+'"})+DCOUNTA(C1:G133,"Fri",{"Fri";"'+unit+'"}))*2');
+  cell = newCell;
+  
+  var newCell = cell.offset(1, 0);
+  var unit = "4C.PlantProp";
+  newCell.setValue('=(DCOUNTA(C1:G133,"Mon",{"Mon";"'+unit+'"})+DCOUNTA(C1:G133,"Tues",{"Tues";"'+unit+'"})+DCOUNTA(C1:G133,"Wed",{"Wed";"'+unit+'"})+DCOUNTA(C1:G133,"Thurs",{"Thurs";"'+unit+'"})+DCOUNTA(C1:G133,"Fri",{"Fri";"'+unit+'"}))*2');
+  cell = newCell;
+  
+  var newCell = cell.offset(1, 0);
+  var unit = "4F.PlantPropFD";
+  newCell.setValue('=(DCOUNTA(C1:G133,"Mon",{"Mon";"'+unit+'"})+DCOUNTA(C1:G133,"Tues",{"Tues";"'+unit+'"})+DCOUNTA(C1:G133,"Wed",{"Wed";"'+unit+'"})+DCOUNTA(C1:G133,"Thurs",{"Thurs";"'+unit+'"})+DCOUNTA(C1:G133,"Fri",{"Fri";"'+unit+'"}))*2');
+  cell = newCell;
+  
+  var newCell = cell.offset(1, 0);
+  var unit = "5C.FieldProd";
