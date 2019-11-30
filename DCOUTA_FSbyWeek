@@ -10,6 +10,22 @@ function DCOUNTA_FSbyWeek() {
     cell.setValue(DCOUNTA(week, "1C.PrincSustAg"));
     newCellDCOUNTA(week, "2C.FarmPlan");
     newCellDCOUNTA(week, "2F.FarmPlanFD");
+    newCellDCOUNTA(week, "3C.Soils");
+    newCellDCOUNTA(week, "3F.SoilsFD");
+    newCellDCOUNTA(week, "4C.PlantProp");
+    newCellDCOUNTA(week, "4F.PlantPropFD");
+    newCellDCOUNTA(week, "5C.FieldProd");
+    newCellDCOUNTA(week, "5F.FieldProdFD");
+    newCellDCOUNTA(week, "6C.Greenhouse");
+    newCellDCOUNTA(week, "6F.GreenhouseFD");
+    newCellDCOUNTA(week, "7C.PestMgmt");
+    newCellDCOUNTA(week, "7F.PestMgmtFD");
+    newCellDCOUNTA(week, "8C.FarmEquip");
+    newCellDCOUNTA(week, "8F.FarmEquipFD");
+    newCellDCOUNTA(week, "9C.Harvest");
+    newCellDCOUNTA(week, "9F.HarvestFD");
+    newCellDCOUNTA(week, "10C.Marketing");
+    newCellDCOUNTA(week, "10F.MarketingFD");
     
     function newCellDCOUNTA(week, unit) { 
       var newCell = cell.offset(1, 0);
