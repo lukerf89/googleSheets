@@ -8,11 +8,13 @@ function DCOUNTA_FSbyWeek() {
   function fillCells(column, week) {
     var cell = activeSheet.getRange(column + "2");
     cell.setValue(DCOUNTA(week, "1C.PrincSustAg"));
+    newCellDCOUNTA(week, "2C.FarmPlan");
+    newCellDCOUNTA(week, "2F.FarmPlanFD");
     
-    function newCellDCOUNTA(cell, week, unit) { 
+    function newCellDCOUNTA(week, unit) { 
       var newCell = cell.offset(1, 0);
       newCell.setValue(DCOUNTA(week, unit));
-      cell = newCell;
+      return cell = newCell;
     }
     
     function DCOUNTA(week, unit) { 
