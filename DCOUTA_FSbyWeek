@@ -3,7 +3,52 @@ function DCOUNTA_FSbyWeek() {
   var activeSheet = SpreadsheetApp.getActive();
   var selection = activeSheet.getSelection();
   
+  //need to create named ranges
+  
   fillCells("M", "week1");
+  fillCells("N", "week2");
+  fillCells("O", "week3");
+  fillCells("P", "week4");
+  fillCells("Q", "week5");
+  fillCells("R", "week6");
+  fillCells("S", "week7");
+  fillCells("T", "week8");
+  fillCells("U", "week9");
+  fillCells("V", "week10");
+  fillCells("W", "week11");
+  fillCells("X", "week12");
+  fillCells("Y", "week13");
+  fillCells("Z", "week14");
+  fillCells("AA", "week15");
+  fillCells("AB", "week16");
+  fillCells("AC", "week17");
+  fillCells("AD", "week18");
+  fillCells("AE", "week19");
+  fillCells("AF", "week20");
+  fillCells("AG", "week21");
+  fillCells("AH", "week22");
+  fillCells("AI", "week23");
+  fillCells("AJ", "week24");
+  fillCells("AK", "week25");
+  fillCells("AL", "week26");
+  fillCells("AM", "week27");
+  fillCells("AN", "week28");
+  fillCells("AO", "week29");
+  fillCells("AP", "week20");
+  fillCells("AQ", "week31");
+  fillCells("AR", "week32");
+  fillCells("AS", "week33");
+  fillCells("AT", "week34");
+  fillCells("AU", "week35");
+  fillCells("AV", "week36");
+  fillCells("AW", "week37");
+  fillCells("AX", "week38");
+  fillCells("AY", "week39");
+  fillCells("AZ", "week40");
+  fillCells("BA", "week41");
+  fillCells("BB", "week42");
+  fillCells("BC", "week43");
+  fillCells("BD", "week44");
   
   function fillCells(column, week) {
     var cell = activeSheet.getRange(column + "2");
